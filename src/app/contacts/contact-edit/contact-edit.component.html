@@ -1,6 +1,6 @@
 <div class="panel panel-default">
     <div class="panel-body">
-      <form id="contact-edit">
+      <form id="contact-edit" (ngSubmit)="onSubmit(f)" #f="ngForm">
         <div class="row">
           <div class="col-sm-12 form-group">
             <label for="name">Name:</label>
@@ -9,7 +9,11 @@
               id="name"
               class="form-control required"
               size="120"
-              max="120">
+              max="120"
+              name="name"
+              [ngModel]="contact?.name"
+              required
+              #name="ngModel">
           </div>
         </div>
   
@@ -21,7 +25,10 @@
               id="email"
               class="form-control required"
               size="120"
-              max="255">
+              max="255"
+              name="email"
+              [ngModel]="contact?.email"
+              #email="ngModel">
           </div>
         </div>
   
@@ -33,7 +40,10 @@
               id="phone"
               class="form-control invalid"
               size="150"
-              max="255">
+              max="255"
+              name="phone"
+              [ngModel]="contact?.phone"
+              #phone="ngModel">
   
           </div>
         </div>
@@ -46,7 +56,11 @@
               id="imageUrl"
               class="form-control"
               size="150"
-              max="255">
+              max="255"
+              name="imageUrl"
+              [ngModel]="contact?.imageUrl"
+              required
+              #imageUrl="ngModel">
           </div>
         </div>
   
