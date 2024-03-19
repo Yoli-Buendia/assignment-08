@@ -9,9 +9,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './contact-edit.component.css'
 })
 export class ContactEditComponent {
-  originalDocument: Document;
-  document: Document;
-  editMode: boolean = false; 
+ 
   groupContacts: Contact[] = [];
 contact: any;
   onCancel() {

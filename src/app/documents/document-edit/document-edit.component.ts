@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './document-edit.component.css'
 })
 export class DocumentEditComponent {
-
+  originalDocument: Document;
+  document: Document;
+  editMode: boolean = false; 
+  onCancel() {
+  }
 }
