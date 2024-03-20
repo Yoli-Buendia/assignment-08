@@ -11,7 +11,7 @@ import { FormsModule } from '@angular/forms';
 export class ContactEditComponent {
  
   groupContacts: Contact[] = [];
-contact: any;
+  contact: any;
   onCancel() {
   }
   onSubmit(form: NgForm) {

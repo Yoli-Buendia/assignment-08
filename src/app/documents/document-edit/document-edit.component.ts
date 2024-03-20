@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Document } from '../document.model';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-document-edit',
@@ -9,6 +11,10 @@ export class DocumentEditComponent {
   originalDocument: Document;
   document: Document;
   editMode: boolean = false; 
+
   onCancel() {
+  }
+  onSubmit(form: NgForm) {
+
   }
 }
